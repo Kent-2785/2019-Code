@@ -5,6 +5,9 @@ Some resources for FRC Coding:
 
 https://wpilib.screenstepslive.com/s/currentCS/m/java/c/88897
   This is the introduction by the FRC organization to basics codes with motors...
+
+https://www.youtube.com/watch?v=64hPDvphcfA
+  A good source to learn how to code a drive train.
   
 https://www.firstroboticscanada.org/cancode/frc/
   This is a tutorial made by Team Canada about some basics of coding.
