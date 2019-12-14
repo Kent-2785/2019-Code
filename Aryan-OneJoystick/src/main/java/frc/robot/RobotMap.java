@@ -18,9 +18,9 @@ public class RobotMap {
   //Check for ports before starting
 
   public static final int FRONT_LEFT = 0;
-  public static final int FRONT_RIGHT = 0;
-  public static final int BACK_LEFT = 0;
-  public static final int BACK_RIGHT = 0;
+  public static final int FRONT_RIGHT = 1;
+  public static final int BACK_LEFT = 2;
+  public static final int BACK_RIGHT = 3;
 
 
   // For example to map the left and right motors, you could define the
