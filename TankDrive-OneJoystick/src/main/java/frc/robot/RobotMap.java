@@ -21,7 +21,6 @@ public class RobotMap {
   public static final int RIGHT_BACK = 3;
   public static final double SPEED_ADJUST = 0.7;
 
-  public static final int 
   // For example to map the left and right motors, you could define the
   // following variables to use with your drivetrain subsystem.
   // public static int leftMotor = 1;
