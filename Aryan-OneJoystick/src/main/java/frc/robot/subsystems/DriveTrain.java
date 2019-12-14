@@ -51,11 +51,11 @@ public class DriveTrain extends Subsystem {
   {
     if(degrees >= 0 && degrees <= 90)
     {
-      return degrees*(10/0);
+      return degrees*(10/9)/100;
     }
     else if(degrees >= 270 && degrees < 360)
     {
-      return (90-((degrees-270)*(10/9)))*-1;
+      return ((90-((degrees-270)*(10/9)))*-1)/100;
     }
     else if(degrees > 90 && degrees < 180)
     {
@@ -71,11 +71,11 @@ public class DriveTrain extends Subsystem {
   {
     if(degrees > 90 && degrees < 180)
     {
-      return 90 - (degrees-90)*(10/9);
+      return (90 - (degrees-90)*(10/9))/100;
     }
     else if(degrees > 190 && degrees < 270)
     {
-      return (degrees-180)*(10/9)*-1;
+      return ((degrees-180)*(10/9)*-1)/100;
     }
     else if(degrees >= 0 && degrees <= 90)
     {
