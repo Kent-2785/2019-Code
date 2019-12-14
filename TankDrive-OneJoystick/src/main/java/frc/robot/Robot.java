@@ -14,6 +14,8 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.commands.TankDrive;
 import frc.robot.subsystems.Drivetrain;
+import frc.robot.commands.PneumaticsPractice;
+import frc.robot.subsystems.Pneumatics;
 
 /**
  * The VM is configured to automatically run this class, and to call the
