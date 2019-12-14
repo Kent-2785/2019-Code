@@ -8,6 +8,8 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
+import frc.robot.commands.PneumaticsPractice;
+
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -16,7 +18,8 @@ import edu.wpi.first.wpilibj.Joystick;
 public class OI {
 
   public Joystick m_stick = new Joystick(0);
-
+  Button B1 = new JoystickButton(m_stick, 1);
+  
   public double getXAxis()
   {
     return m_stick.getX();
@@ -31,9 +34,10 @@ public class OI {
     return m_stick.getTwist();
   }
   
-  Button B1 = new JoystickButton(m_stick, 1);
-  
+  public OI()
+  {
   B1.whenPressed(new PneumaticsPractice());
+  }
   /*public double getTwist()
   {
     return m_stick.getTwist();
