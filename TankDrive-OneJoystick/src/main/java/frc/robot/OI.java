@@ -30,6 +30,10 @@ public class OI {
   {
     return m_stick.getTwist();
   }
+  
+  Button B1 = new JoystickButton(m_stick, 1);
+  
+  B1.whenPressed(new PneumaticsPractice());
   /*public double getTwist()
   {
     return m_stick.getTwist();
