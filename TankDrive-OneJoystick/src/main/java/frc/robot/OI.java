@@ -36,7 +36,7 @@ public class OI {
   
   public OI()
   {
-  B1.whenPressed(new PneumaticsPractice());
+  B1.whilePressed(new PneumaticsPractice());
   }
   /*public double getTwist()
   {
