@@ -22,10 +22,10 @@ import frc.robot.commands.TankDrive;
  */
 public class Drivetrain extends Subsystem {
 
-    Spark leftFront;
-    Spark leftBack;
-    Spark rightFront;
-    Spark rightBack;
+    TalonSRX leftFront;
+    TalonSRX leftBack;
+    TalonSRX rightFront;
+    TalonSRX rightBack;
 
     DifferentialDrive diffDrive;
 
@@ -33,10 +33,10 @@ public class Drivetrain extends Subsystem {
 
     public Drivetrain() {
 
-        leftFront = new Spark(RobotMap.LEFT_FRONT);
-        leftBack = new Spark(RobotMap.LEFT_BACK);
-        rightFront = new Spark(RobotMap.RIGHT_FRONT);
-        rightBack = new Spark(RobotMap.RIGHT_BACK);
+        leftFront = new TalonSRX(RobotMap.LEFT_FRONT);
+        leftBack = new TalonSRX(RobotMap.LEFT_BACK);
+        rightFront = new TalonSRX(RobotMap.RIGHT_FRONT);
+        rightBack = new TalonSRX(RobotMap.RIGHT_BACK);
 
         SpeedControllerGroup left = new SpeedControllerGroup(leftFront, leftBack);
         SpeedControllerGroup right = new SpeedControllerGroup(rightFront, rightBack);
