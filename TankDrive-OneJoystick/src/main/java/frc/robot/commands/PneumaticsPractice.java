@@ -28,7 +28,6 @@ public class PneumaticsPractice extends Command {
   @Override
   protected void execute() {
     Robot.m_pneumatics.extendSolenoid();
-    Robot.m_pneumatics.retractSolenoid();
   }
 
   // Make this return true when this Command no longer needs to run execute()
