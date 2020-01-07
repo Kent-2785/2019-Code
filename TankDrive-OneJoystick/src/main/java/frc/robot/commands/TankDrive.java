@@ -41,7 +41,6 @@ public class TankDrive extends Command {
       {
         Robot.m_train.setLeftMotor(-m_stickY*RobotMap.SPEED_ADJUST);
         Robot.m_train.setRightMotor(-m_stickY*RobotMap.SPEED_ADJUST);
-        //Move foward
       }
     }
 
@@ -49,13 +48,11 @@ public class TankDrive extends Command {
     {
       Robot.m_train.setLeftMotor(m_stickY*(1-(-1*m_stickX))); 
       Robot.m_train.setRightMotor(m_stickY);
-      // Left turn
     }
     else 
     {
       Robot.m_train.setRightMotor(m_stickY*(1-m_stickX));
       Robot.m_train.setLeftMotor(m_stickY);
-      // Right turn
     }
     
 
