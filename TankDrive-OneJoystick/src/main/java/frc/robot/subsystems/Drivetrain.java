@@ -32,18 +32,10 @@ public class Drivetrain extends Subsystem {
     Encoder driveEncoder;
 
     public Drivetrain() {
-
         leftFront = new TalonSRX(RobotMap.LEFT_FRONT);
         leftBack = new TalonSRX(RobotMap.LEFT_BACK);
         rightFront = new TalonSRX(RobotMap.RIGHT_FRONT);
         rightBack = new TalonSRX(RobotMap.RIGHT_BACK);
-
-        SpeedControllerGroup left = new SpeedControllerGroup(leftFront, leftBack);
-        SpeedControllerGroup right = new SpeedControllerGroup(rightFront, rightBack);
-
-        diffDrive = new DifferentialDrive(left, right);
-
-        driveEncoder = new Encoder(1, 2);
     }
     
     public void drive(double left, double right)
