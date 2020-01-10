@@ -28,20 +28,11 @@ public class TankDrive extends Command {
   protected void execute() {
     double m_stickX = Robot.m_oi.getXAxis();
     double m_stickY = Robot.m_oi.getYAxis();
-    double m_stickT = Robot.m_oi.getT();
-
-    if(m_stickY == 0 && m_stickX != 0)
-    {
-      //Horizontal movement;
-    }
-
+    
     if(m_stickX ==0 && m_stickY != 0)
     {
-      if(m_stickY < 0)
-      {
         Robot.m_train.setLeftMotor(-m_stickY*RobotMap.SPEED_ADJUST);
         Robot.m_train.setRightMotor(-m_stickY*RobotMap.SPEED_ADJUST);
-      }
     }
 
     if(m_stickX < 0)
