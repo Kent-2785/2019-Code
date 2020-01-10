@@ -19,6 +19,10 @@ public class OI {
 
   public Joystick m_stick = new Joystick(0);
   Button B1 = new JoystickButton(m_stick, 1);
+  Button B2 = new JoystickButton(m_stick, 2);
+  Button B3 = new JoystickButton(m_stick, 3);
+  Button B4 = new JoystickButton(m_stick, 4);
+
   
   public double getXAxis()
   {
@@ -36,7 +40,9 @@ public class OI {
   
   public OI()
   {
-  B1.whilePressed(new PneumaticsPractice());
+  B1.whileHeld(new HorizontalMovement());
+  B3.whenPressed(new PneumaticsOut());
+  B4.whenPressed(new PneumaticsIn());
   }
   /*public double getTwist()
   {
