@@ -14,7 +14,6 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import frc.robot.RobotMap;
 import frc.robot.commands.TankDrive;
-//import frc.robot.commands.DriveArcade;
 /**
  * Add your docs here.
  * 
@@ -27,32 +26,23 @@ public class Drivetrain extends Subsystem {
     TalonSRX rightFront;
     TalonSRX rightBack;
 
-    DifferentialDrive diffDrive;
-
-    Encoder driveEncoder;
-
     public Drivetrain() {
         leftFront = new TalonSRX(RobotMap.LEFT_FRONT);
         leftBack = new TalonSRX(RobotMap.LEFT_BACK);
         rightFront = new TalonSRX(RobotMap.RIGHT_FRONT);
         rightBack = new TalonSRX(RobotMap.RIGHT_BACK);
     }
-    
-    public void drive(double left, double right)
-    {
-        diffDrive.tankDrive(left,right);
-    }
 
     public void setLeftMotor(double speed)
     {
-        leftFront.set(speed);
-        leftBack.set(speed);
+        leftFront.set(ControlMode.PercentOutput, speed);
+        leftBack.set(ControlMode.PercentOutput, speed);
     }
 
     public void setRightMotor(double speed)
     {
-        rightFront.set(-speed);
-        rightBack.set(-speed);
+        rightFront.set(ControlMode.PercentOutput, -speed);
+        rightBack.set(ControlMode.PercentOutput, -speed);
     }
 
     public void initDefaultCommand()
